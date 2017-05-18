@@ -97,7 +97,7 @@ public class OriginTest extends TestContainer {
         @Override
         public boolean checkOrigin(String originHeaderValue) {
 
-            if (!originHeaderValue.startsWith("http://")) {
+            if (originHeaderValue != null && !originHeaderValue.startsWith("http://")) {
                 return false;
             } else {
                 return true;

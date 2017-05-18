@@ -209,7 +209,6 @@ public final class Handshake {
 
         Map<String, List<String>> requestHeaders = upgradeRequest.getHeaders();
         requestHeaders.put(UpgradeRequest.HOST, Collections.singletonList(host));
-        requestHeaders.put(UpgradeRequest.ORIGIN_HEADER, Collections.singletonList("http://" + host));
     }
 
     /**
